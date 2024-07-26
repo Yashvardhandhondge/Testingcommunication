@@ -8,6 +8,8 @@ interface IMessage {
   username?: string;
 }
 
+
+
 const server = http.createServer((request: http.IncomingMessage, response: http.ServerResponse) => {
   console.log(`${new Date()} Received request for ${request.url}`);
   response.end("hi there");
